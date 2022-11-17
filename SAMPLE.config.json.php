@@ -1,4 +1,4 @@
-<?
+<?php
 /*
   Remove SAMPLE. from my name and put me in project root
 */

@@ -1,0 +1,44 @@
+// Tablet, both orientations
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max)
+  html
+    font-size: 55%
+  body
+    // Code
+  
+  // Tablet, vertical
+  @media (orientation: portrait)
+    body
+      .sticky
+        .pull-right
+          display: none
+        .pull-left
+          float: none
+          width: 100%
+          text-align: center
+      .top
+        .ws-1
+          width: 15%
+        .ws-10
+          width: 70%
+        .fullwidth
+          text-align: center
+      .drop
+        &.crow-logo
+          left: 50%
+          margin-left: -119px
+        &.ipad
+          display: none
+      &:before
+        content: 'tablet vertical'
+
+  // Tablet, horizontal
+  @media (orientation: landscape)
+    body
+      .top
+        .ws-10
+          width: 100%
+          padding: 0
+        .ws-1
+          display: none
+      &:before
+        content: 'tablet horizontal'

@@ -1,0 +1,350 @@
+light-blue()
+  rgba(#23abca)
+normal-blue()
+  rgba(#135f72)
+dark-blue()
+  rgba(#03252d)
+darkest-blue()
+  rgba(#02191e)
+light-green()
+  rgba(#3ac1a0)
+gray()
+  rgba(#313131)
+
+a
+  color: get-blue()
+  text-decoration: none
+  &:hover
+    color: get-darkblue()
+
+.crow
+  font-family: arial, sans-serif
+  > *:not(.icon)
+    font-family: arial, sans-serif
+    > *
+      font-family: futura, sans-serif
+
+.example-box
+  background: #dcdcdc
+.blue-one,
+.blue-two,
+.blue-three
+  font-size: 16px
+  line-height: 35px
+.blue-one
+  background-color: #156e83
+.blue-two
+  background-color: #135f72
+.blue-three
+  background-color: #0f4d5c
+
+body
+  &:before
+    position: fixed
+    visibility: hidden
+    *display: none
+
+.show-smartphone
+  display: none
+  
+h1, h2, h3, h4, h5, h6
+  font-weight: 100
+  font-size: 42px
+  line-height: 50px
+p
+  color: gray()
+  font-weight: 100
+  font-size: 20px
+  line-height: 30px
+
+.bot
+  .fullwidth
+    background-color: dark-blue()
+    padding: 70px 0
+    color: get-white()
+    h4
+      margin-top: 0
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 10px
+    p
+      font-size: 16px
+      line-height: 22px
+      color: get-white()
+    a:not(.crow-logo)
+      color: normal-blue()
+      transition: color .15s ease
+      font-size: 16px
+      line-height: 26px
+      &:hover
+        text-decoration: none
+        color: get-white()
+    .copyright
+      margin-top: 35px
+      display: block
+      color: normal-blue()
+      font-size: 16px
+      line-height: 24px
+.top
+  .fullwidth
+    position: relative
+    overflow: hidden
+    height: 635px
+    background-color: dark-blue()
+    ul
+      height: 60px
+    .nest
+      position: relative
+      height: 100%
+      z-index: 1
+      .crow
+        height: 100%
+      p
+        font-size: 42px
+        line-height: 52px
+        color: get-white()
+        span
+          color: light-blue()
+  h1
+    font-weight: normal
+  .keep-alive
+    i
+      font-size: 40px
+    a
+      font-size: 70px
+      &:hover
+          text-decoration: none
+.sticky
+  background: darkest-blue()
+  width: 100%
+  z-index: 100
+  &.stuck
+    position: fixed
+    top: 0
+  a
+    color: get-white()
+    font-size: 16px
+    line-height: 16px
+    display: block
+    padding: 35px 25px 30px 25px
+    text-transform: uppercase
+    font-weight: bold
+    transition: background .15s ease
+    &:hover
+      text-decoration: none
+      background: dark-blue()
+  ul
+    &.social-shares
+      vertical-align: top
+      li
+        margin: 0 -10px
+        vertical-align: top
+        padding-top: 30px
+        &:last-child
+          margin-left: 20px
+
+block-basics()
+  text-align: center
+  .nest
+    padding: 0
+    position: relative
+  h2
+    color: light-blue()
+.button-height
+  height: 60px
+#tips
+  block-basics()
+  background-color: light-blue()
+  h2
+    color: get-white()
+  ul
+    position: relative
+    z-index: 1
+    li
+      color: get-white()
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 10px
+  .drop
+    z-index: 0
+  .icon-crow
+    color: #1798b6
+#usage
+  block-basics()
+  h2
+    margin-bottom: 0
+  color: gray()
+  text-align: left
+  .crow
+    color: get-white()
+    font-weight: bold
+#setup
+  block-basics()
+  h2
+    margin-bottom: 0
+  background-color: dark-blue()
+  .icon-crow
+    color: darkest-blue()
+  p
+    color: get-white()
+  a
+    color: #23abca;
+    &:hover
+      text-decoration: underline
+    &.button
+      max-width: 565px
+      width: 100%
+      padding-bottom: 10px
+      position: relative
+      z-index: 1
+  .drop
+    z-index: 0
+#features
+  block-basics()
+  h2
+    margin-bottom: 0px
+  .ws-4
+    padding: 30px 15px
+    p
+      margin-top: 30px
+      font-size: 20px
+      line-height: 26px
+      text-align: center
+  a
+    color: #23abca
+    &:hover
+      text-decoration: underline
+  .circle
+    margin: 0 30px
+    background: light-green()
+.icon
+  &.icon-github
+    font-size: 20px
+    line-height: 0px
+  &.icon-cloud
+    font-size: 32px
+    line-height: 12px
+    margin-right: 5px
+    vertical-align: top
+  &.icon-ghost,
+  &.icon-wand,
+  &.icon-responsive,
+  &.icon-target,
+  &.icon-cog,
+  &.icon-bulb
+    color: dark-blue()
+    font-size: 84px
+    line-height: 84px
+    
+.crow-logo
+  font-size: 64px
+  transition: all .15s ease
+  &:hover
+    text-decoration: none
+
+.drop
+  &.crow
+    bottom: 0
+    right: -50px
+    .icon-crow
+      margin-bottom: -35px
+      font-size: 245px
+  &.crow-logo
+    font-size: 118px
+    top: 35px
+    left: -40px
+  &.ipad
+    z-index: 0
+    line-height: 0
+    bottom: -25%
+    min-width: 515px
+    right: 30px
+    width: 45%
+a
+  &.button
+    letter-spacing: 1px
+    font-weight: bold
+    color: get-white()
+    font-size: 16px
+    line-height: 16px
+    padding: 20px 0 15px 0
+    width: 205px
+    text-align: center
+    transition: all .15s ease
+    &.lightred,
+    &.pink,
+    &.deepblue
+      width: 135px
+      font-size: 12px
+      line-height: 12px
+      border-top: 4px solid transparent
+      margin-right: 12px
+      margin-top: 4px
+    &.lightred
+      background: rgba(252, 100, 77, 1)
+      border-bottom: 4px solid lighten(rgba(252, 100, 77, 1), 10%)
+      &:hover
+        background: rgba(252, 100, 77, 1)
+      &:focus
+        margin-top: 2px
+        border-bottom: 2px solid rgba(252, 100, 77, 1)
+    &.pink
+      background: rgba(196, 85, 140, 1)
+      border-bottom: 4px solid lighten(rgba(196, 85, 140, 1), 10%)
+      &:hover
+        background: rgba(196, 85, 140, 1)
+      &:focus
+        margin-top: 2px
+        border-bottom: 2px solid rgba(196, 85, 140, 1)
+    &.deepblue
+      background: rgba(30, 55, 92, 1)
+      border-bottom: 4px solid lighten(rgba(30, 55, 92, 1), 10%)
+      &:hover
+        background: rgba(30, 55, 92, 1)
+      &:focus
+        margin-top: 2px
+        border-bottom: 2px solid rgba(30, 55, 92, 1)
+    &.green
+      vertical-align: top
+      background: light-green()
+      border-bottom: 4px solid #2e9a80
+      border-top: 4px solid transparent
+      &:hover
+        background: light-green()
+      &:focus
+        margin-top: 2px
+        border-bottom: 2px solid #2e9a80
+    &.blue
+      vertical-align: top
+      margin-right: 25px
+      background: light-blue()
+      border-bottom: 4px solid #1c89a2
+      border-top: 4px solid transparent
+      &:hover
+        background: light-blue()
+      &:focus
+        margin-top: 2px
+        border-bottom: 2px solid #1c89a2
+  &.link
+    color: $main-color
+code
+  width: 100%
+  inline()
+  font-size: 14px
+  border: 0
+  padding-top: 15px !important
+  padding-bottom: 15px !important
+ul
+  li
+    word-break: break-word
+  &.nav
+    width: 100%
+    margin: 0
+    li
+      padding: 0
+      a,
+      strong
+        display: block
+        padding: 10px 20px
+        &.active
+          background: $weak-color

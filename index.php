@@ -1,4 +1,4 @@
-<? 
+<?php
   include_once "App.php";
   $app = new App(array('core/init', 'core/orm2', 'functions'));
   
@@ -43,6 +43,7 @@
     return true;
 	}
 
+  
 	if(isset($_GET['compile'])) {
 	  $file = $app->server_root.'dev/index.html';
 	  //$current = file_get_contents($file);

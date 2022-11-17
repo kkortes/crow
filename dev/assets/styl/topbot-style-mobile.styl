@@ -1,0 +1,105 @@
+// Smartphone, both orientations
+@media (max-width: $screen-xs-max)
+  html
+    font-size: 50%
+  .hide-smartphone
+    display: none !important
+  #setup
+    code
+      width: 90%
+    p
+      padding: 0 20px
+  body
+    overflow: hidden
+    h1, h2, h3, h4, h5, h6
+      word-break: break-word
+    .nest
+      width: auto
+    #usage
+      .nest
+        padding: 0 15px
+    #tips
+      ul
+        padding: 0 25px
+    .hide-smartphone
+      display: none
+    code
+      word-break: break-all !important
+      font-size: 10px
+      white-space: pre-line !important
+  
+    a
+      &.button
+        width: 90% !important
+        &.blue
+          margin-right: 0 !important
+    #wrapper
+      #features,
+      #tips
+        .crow
+          uncrowify()
+    .example-box
+      img
+        width: 150px
+    .sticky
+      a
+        padding: 20px
+      .nest
+        padding: 0
+      .pull-right
+        display: none
+      .pull-left
+        float: none
+        width: 100%
+        text-align: center
+        ul
+          width: 100%
+          li
+            margin: 0 -2px
+            width: 50%
+    .top
+      ul
+        display: block
+        li
+          display: block
+          text-align: center
+          a
+            &.blue
+              margin-bottom: 30px
+      .ws-1
+        display: none
+      .ws-10
+        width: 100%
+      .fullwidth
+        text-align: center
+    .drop
+      &.crow
+        right: 0
+      &.crow-logo
+        left: 50%
+        margin-left: -119px
+      &.ipad
+        display: none
+    .bot
+      .fullwidth
+        padding: 50px 0
+      .crow
+        .ws-4
+          &:not(:first-child)
+            display: none
+          &:first-child
+            width: 100%
+
+  // Smartphone, vertical
+  @media (orientation: portrait)
+    body
+      // Your code here
+      &:before
+        content: 'smartphone vertical'
+  
+  // smartphone, horizontal
+  @media (orientation: landscape)
+    body
+      // Your code here
+      &:before
+        content: 'smartphone horizontal'

@@ -1,5 +1,5 @@
 <div class="top">
-  <? if(!isset($_GET['page'])) { ?>
+  <?php if(!isset($_GET['page'])) { ?>
   <div class="fullwidth">
     <div class="drop ipad">
       <img src="<?=$app->url?>assets/image/crow-ipad.png" alt="" />
@@ -44,5 +44,5 @@
         </span>
       </a>
     </div>
-  </div> <? } ?>
+  </div> <?php } ?>
 </div>
