@@ -13,20 +13,6 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/base.css?v=0803" />
   </head>
   <body class="page-index">
-    <div id="fb-root"></div>
-    <script>
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src =
-          "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=522665991192560&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
     <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -68,12 +54,14 @@
               <ul class="inline">
                 <li>
                   <a
-                    href="?download=crow-3.0/crow.css"
+                    href="/crow-3.0/crow.css"
                     target="_blank"
                     class="button blue"
                     style="padding-top: 13px"
-                    >Download css</a
+                    download
                   >
+                    Download css
+                  </a>
                 </li>
                 <li>
                   <a
@@ -90,30 +78,36 @@
               <ul class="inline hide-smartphone">
                 <li>
                   <a
-                    href="?download=crow-3.0/crow.styl"
+                    href="/crow-3.0/crow.styl"
                     target="_blank"
                     class="button lightred"
                     style="padding-top: 13px"
-                    >Stylus</a
+                    download
                   >
+                    Stylus
+                  </a>
                 </li>
                 <li>
                   <a
-                    href="?download=crow-3.0/crow.less"
+                    href="/crow-3.0/crow.less"
                     target="_blank"
                     class="button pink"
                     style="padding-top: 13px"
-                    >Less</a
+                    download
                   >
+                    Less
+                  </a>
                 </li>
                 <li>
                   <a
-                    href="?download=crow-3.0/crow.scss"
+                    href="/crow-3.0/crow.scss"
                     target="_blank"
                     class="button deepblue"
                     style="padding-top: 13px"
-                    >Sass</a
+                    download
                   >
+                    Sass
+                  </a>
                 </li>
               </ul>
             </div>
@@ -145,35 +139,6 @@
                   height="20px"
                 ></iframe>
               </li>
-              <li>
-                <!-- Place this tag where you want the +1 button to render. -->
-                <div
-                  class="g-plusone"
-                  data-size="medium"
-                  data-href="http://getcrow.eu"
-                ></div>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/share"
-                  class="twitter-share-button"
-                  data-url="http://getcrow.eu"
-                  data-via="kortekim"
-                  data-hashtags="crow"
-                  >Tweet</a
-                >
-              </li>
-              <li>
-                <div
-                  class="fb-like"
-                  data-href="http://getcrow.eu"
-                  data-width="50"
-                  data-layout="button_count"
-                  data-action="like"
-                  data-show-faces="false"
-                  data-share="false"
-                ></div>
-              </li>
             </ul>
           </div>
           <div class="pull-left">
@@ -182,9 +147,9 @@
                 <a href="#features" scroll-link>Features</a>
               </li>
               <li>
-                <a href="#setup" scroll-link
-                  ><span style="color: yellow">New!</span> Flexcrow</a
-                >
+                <a href="#setup" scroll-link>
+                  <span style="color: yellow">New!</span> Flexcrow
+                </a>
               </li>
               <li>
                 <a href="#usage" scroll-link>Usage</a>
@@ -287,10 +252,10 @@
             When I created crow I did so to tackle a whole bunch of problems
             that comes with a traditional grid framework. Today crow runs on
             production environments on over 20 websites with great success.<br /><br />
-            <strong
-              >I'm happy to announce
-              <span style="color: #23abca">Flexcrow</span></strong
-            ><br />
+            <strong>I'm happy to announce
+              <span style="color: #23abca">Flexcrow</span>
+            </strong>
+            <br />
             Oh jeez.. Another hacky-tacky thing? <br />No! Flexcrow is just
             crow, built with flexbox. Simple as that.<br /><br />
 
@@ -303,27 +268,25 @@
             Easy. Crow comes as either Less, Sass or Stylus. In the
             crow/.less/.scss/.styl file you will find a row where it says
             "crowify()". Change that to "flex-crowify()" and you are done.<br /><br />
-            <strong
-              >Nice! It works like a charm, but am I locked down to crow's way
-              of doing things now?</strong
-            ><br />
+            <strong>
+              Nice! It works like a charm, but am I locked down to crow's way of
+              doing things now?
+            </strong>
+            <br />
             Of course not. There's no rocket sience here, just regular flexbox
             declarations with some preset values. Change anything you like.
             What's even cooler is that flexcrow allows you to do things regular
             crow wouldn't, like:
-
-            <code class="language-javascript relative">
-              .crow { > div:nth-child(2) { order: 3; } > div:nth-child(4) {
-              align-self: stretch; } }</code
-            >
+<code class="language-javascript relative">
+  .crow {
+    > div:nth-child(2) {
+      order: 3;
+    }
+    > div:nth-child(4) {
+      align-self: stretch;
+    }
+  }</code>
           </p>
-          <!--<div class="spacer half"></div>
-
-    <div class="button-height">
-      <a href="?download=crow-3.0/crow.min.css" class="button blue">
-        <span class="icon icon-cloud"></span> <span style="vertical-align: top;margin-top: -2px;display:inline-block;">Download (minified)</span>
-      </a>
-    </div>-->
 
           <div class="spacer"></div>
           <div class="spacer"></div>
@@ -352,13 +315,13 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
+<code class="language-javascript">
+  &lt;div class=&quot;crow&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code
+>
 
           <div class="spacer"></div>
 
@@ -374,13 +337,12 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;ws-2&quot;&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;ws-8&quot;&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;ws-2&quot;&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
+<code class="language-javascript">
+  &lt;div class=&quot;crow&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;ws-2&quot;&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;ws-8&quot;&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;ws-2&quot;&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code>
 
           <div class="spacer"></div>
 
@@ -396,13 +358,12 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;w-35&quot;&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;w-50&quot;&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;w-15&quot;&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
+<code class="language-javascript">
+  &lt;div class=&quot;crow&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;w-35&quot;&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;w-50&quot;&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;w-15&quot;&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code>
 
           <div class="spacer"></div>
 
@@ -418,13 +379,12 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow fly&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
+<code class="language-javascript">
+  &lt;div class=&quot;crow fly&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code>
 
           <div class="spacer"></div>
 
@@ -440,14 +400,12 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow fly gutter&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
-
+<code class="language-javascript">
+  &lt;div class=&quot;crow fly gutter&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code>
           <div class="spacer"></div>
 
           <p style="margin: 0">
@@ -462,15 +420,12 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow fly&quot;
-            style=&quot;height:150px;&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;down&quot;&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div class=&quot;up&quot;&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
-
+<code class="language-javascript">
+  &lt;div class=&quot;crow fly&quot; style=&quot;height:150px;&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;down&quot;&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div class=&quot;up&quot;&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code>
           <div class="spacer"></div>
 
           <p style="margin: 0">
@@ -485,14 +440,12 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow fly up&quot;
-            style=&quot;height:100px;&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
-            &lt;/div&gt;</code
-          >
+<code class="language-javascript">
+  &lt;div class=&quot;crow fly up&quot; style=&quot;height:100px;&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
+  &nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
+  &lt;/div&gt;</code>
 
           <div class="spacer"></div>
 
@@ -506,12 +459,10 @@
             </div>
           </div>
           <div class="spacer half"></div>
-          <code class="language-javascript">
-            &lt;div class=&quot;crow&quot; style=&quot;height:100%;&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;img src=&quot;crow.jpg&quot; alt=&quot;&quot;
-            /&gt;<br />
-            &lt;/div&gt;</code
-          >
+<code class="language-javascript">
+  &lt;div class=&quot;crow&quot; style=&quot;height:100%;&quot;&gt;<br />
+  &nbsp;&nbsp;&lt;img src=&quot;crow.jpg&quot; alt=&quot;&quot;/&gt;<br />
+  &lt;/div&gt;</code>
 
           <div class="spacer"></div>
           <div class="spacer"></div>
@@ -584,10 +535,12 @@
                 ><span class="path7"></span>
               </span>
             </a>
-            <span class="copyright"
-              >Copyright © 2022 Kim Korte<br />
-              All rights reserved<br
-            /></span>
+            <span class="copyright">
+              Copyright © 2022 Kim Korte
+              <br />
+              All rights reserved
+              <br />
+            </span>
           </div>
           <div class="ws-4 hide-smartphone">
             <h4>The developer</h4>
@@ -597,8 +550,9 @@
             </p>
             <a href="http://twitter.com/kortekim" target="_blank">
               <span class="icon icon-twitter" style="color: #7fb3ee"></span>
-              @kortekim </a
-            ><br />
+              @kortekim
+            </a>
+            <br />
             <a href="http://korte.kim" target="_blank">korte.kim</a>
           </div>
           <div class="ws-4 clearfix hide-smartphone">
@@ -606,20 +560,15 @@
               <h4>Other projects</h4>
               <ul class="unstyled">
                 <li>
-                  <a href="http://getleaf.com" target="_blank"
-                    ><span class="icon icon-leaf text-green"></span> Leaf CSS
-                    Framework</a
-                  >
+                  <a href="https://worldseed" target="_blank">
+                    <span class="icon icon-leaf text-green"></span> World Seed
+                  </a>
                 </li>
                 <li>
-                  <a href="http://gettopbot.eu" target="_blank"
-                    ><span class="icon icon-topbot text-white"></span
-                    >&nbsp;&nbsp;Topbot theme</a
-                  >
-                </li>
-                <li>
-                  <a href="http://nano.kortes.se" target="_blank">Nano CMS</a>
-                  <span class="small">(admin/admin)</span>
+                  <a href="http://gettopbot.eu" target="_blank">
+                    <span class="icon icon-topbot text-white"></span>
+                    &nbsp;&nbsp;Topbot theme
+                  </a>
                 </li>
               </ul>
             </div>
@@ -637,19 +586,5 @@
     <script src="/assets/js/libs/waypoint.js"></script>
     <script src="/assets/js/libs/waysticky.js"></script>
     <script src="/assets/js/script.js"></script>
-
-    <script>
-      !(function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0],
-          p = /^http:/.test(d.location) ? "http" : "https";
-        if (!d.getElementById(id)) {
-          js = d.createElement(s);
-          js.id = id;
-          js.src = p + "://platform.twitter.com/widgets.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }
-      })(document, "script", "twitter-wjs");
-    </script>
   </body>
 </html>
