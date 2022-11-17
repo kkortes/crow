@@ -54,6 +54,10 @@
 	  	mkdir($app->server_root.'dev/assets');
 	  recurse_copy($app->server_root.'assets', $app->server_root.'dev/assets');
 
+    if(!file_exists($app->server_root.'dev/crow-3.0'))
+	  	mkdir($app->server_root.'dev/crow-3.0');
+	  recurse_copy($app->server_root.'crow-3.0', $app->server_root.'dev/crow-3.0');
+
 	  if(!file_exists($app->server_root.'dev/bower_components'))
 	  	mkdir($app->server_root.'dev/bower_components');
 	  recurse_copy($app->server_root.'bower_components', $app->server_root.'dev/bower_components');

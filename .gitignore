@@ -7,3 +7,4 @@ core
 nano
 .codekit-cache
 node_modules
+.vercel
