@@ -18,7 +18,6 @@
     if (classes.includes('grid-rows-1fr')) accordion.classList.remove('grid-rows-1fr');
 
     clampedHeight = accordion.children[0].getBoundingClientRect().height;
-    console.log(clampedHeight);
 
     if (classes.includes('grid-rows-0fr')) accordion.classList.add('grid-rows-0fr');
     if (classes.includes('grid-rows-1fr')) accordion.classList.add('grid-rows-1fr');
@@ -53,10 +52,10 @@
 
 <div
   bind:this={accordion}
-  class="grid transition-grid-template-rows {isOpen ? 'grid-rows-1fr' : 'grid-rows-0fr'}"
+  class="transition-grid-template-rows grid w-full {isOpen ? 'grid-rows-1fr' : 'grid-rows-0fr'}"
 >
   <div
-    class="overflow-hidden clamp"
+    class="clamp overflow-hidden"
     class:clamped
     style="--clamp: {clamp}; --min-height: {clampedHeight}px;"
   >
@@ -69,7 +68,7 @@
     display: grid;
   }
   .transition-grid-template-rows {
-    transition: grid-template-rows 1000ms ease-out;
+    transition: grid-template-rows 750ms ease-out;
   }
   .grid-rows-1fr {
     grid-template-rows: 1fr;
