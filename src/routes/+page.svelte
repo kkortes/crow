@@ -74,13 +74,13 @@
             <a
               href="https://crow.korte.kim/crow.css"
               target="_blank"
-              class="rounded-md border border-transparent bg-blue-600 px-5 py-3 font-thin leading-normal tracking-wider text-white hover:bg-blue-600/90 active:translate-y-px"
+              class="rounded-md border border-transparent bg-blue-600 px-5 py-3 font-thin leading-normal tracking-wider text-white outline-0 ring-2 ring-transparent transition-all duration-75 hover:bg-blue-600/90 focus:ring-blue-400/50"
             >
               Download CSS
             </a>
             <button
               onclick={() => (showTutorial = true)}
-              class="rounded-md border border-blue-600 bg-transparent px-5 py-3 font-thin leading-normal tracking-wider text-blue-600 hover:bg-blue-600/10 active:translate-y-px"
+              class="rounded-md border border-blue-600 bg-transparent px-5 py-3 font-thin leading-normal tracking-wider text-blue-600 outline-0 ring-2 ring-transparent transition-all duration-75 hover:bg-blue-600/10 focus:ring-blue-400/50"
             >
               Interactive tutorial
             </button>
@@ -94,7 +94,7 @@
           <crow vertical class="gap-4" left up>
             <span class="font-medium"> {'Settings <crow>'} </span>
 
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={crowProps.up}
                 type="checkbox"
@@ -102,7 +102,7 @@
               />
               Up
             </label>
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={crowProps.right}
                 type="checkbox"
@@ -110,7 +110,7 @@
               />
               Right
             </label>
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={crowProps.down}
                 type="checkbox"
@@ -118,7 +118,7 @@
               />
               Down
             </label>
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={crowProps.left}
                 type="checkbox"
@@ -126,7 +126,7 @@
               />
               Left
             </label>
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={crowProps.vertical}
                 type="checkbox"
@@ -137,14 +137,14 @@
 
             <button
               onclick={() => (showTutorial = false)}
-              class="mt-4 rounded-md border border-blue-600 bg-transparent px-3 py-2 text-sm font-thin leading-normal tracking-wider text-blue-600 hover:bg-blue-600/10 active:translate-y-px"
+              class="mt-4 rounded-md border border-blue-600 bg-transparent px-3 py-2 text-sm font-thin leading-normal tracking-wider text-blue-600 outline-0 ring-2 ring-transparent hover:bg-blue-600/10 focus:ring-blue-400/50 active:translate-y-px"
             >
               Go back
             </button>
           </crow>
           <crow class="gap-4" vertical left>
             <span class="font-medium"> {'Other settings'} </span>
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={squareWrapper}
                 type="checkbox"
@@ -152,7 +152,7 @@
               />
               Square wrapper
             </label>
-            <label class="crow gap-2">
+            <label class="crow gap-2 font-thin">
               <input
                 bind:checked={classBased}
                 type="checkbox"
