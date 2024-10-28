@@ -37,11 +37,11 @@
     Josephine
   </crow>
   <crow>
-    <svg class="square" />
+    <svg />
     Watch
   </crow>
   <crow>
-    <svg class="square" />
+    <svg />
     Events
   </crow>
 </crow>
