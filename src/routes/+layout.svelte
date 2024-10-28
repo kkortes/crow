@@ -12,9 +12,9 @@
   {@html onedark}
 </svelte:head>
 
-<crow class="min-h-screen bg-gradient-to-bl from-sky-100 to-sky-700">
-  <crow vertical class="max-w-[1000px] bg-white shadow-lg rounded-lg">
-    <Header />
+<crow class="min-h-screen bg-gradient-to-bl from-sky-100 to-sky-700 py-20">
+  <crow vertical class="max-w-[1000px] rounded-lg bg-white shadow-lg">
+    <!-- <Header /> -->
     <Main {children} />
   </crow>
 </crow>

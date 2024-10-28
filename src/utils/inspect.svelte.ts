@@ -1,10 +1,8 @@
 import store from '$src/store.svelte';
-import Navigation from '$src/components/Navigation.svelte?raw';
 import Header from '$src/components/Header.svelte?raw';
 import Main from '$src/components/Main.svelte?raw';
 
 const components = {
-  Navigation,
   Header,
   Main
 };

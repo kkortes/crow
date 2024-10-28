@@ -68,7 +68,7 @@
     display: grid;
   }
   .transition-grid-template-rows {
-    transition: grid-template-rows 750ms ease-out;
+    transition: grid-template-rows 600ms ease-out;
   }
   .grid-rows-1fr {
     grid-template-rows: 1fr;
