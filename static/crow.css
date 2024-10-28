@@ -27,7 +27,6 @@ crow,
 [right] {
   justify-content: flex-end;
 }
-
 .vertical,
 [vertical] {
   display: flex;

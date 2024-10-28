@@ -20,7 +20,6 @@
 .right {
   justify-content: flex-end;
 }
-
 .vertical {
   display: flex;
   flex-direction: column;

@@ -60,7 +60,7 @@
   <crow vertical>
     <Accordion isOpen={!showTutorial}>
       <div>
-        <crow vertical class="flex-1 gap-8" left>
+        <crow vertical class="flex-1 gap-8 p-2" left>
           <h1 class="font-[futura]">
             <span class="text-5xl text-blue-600">A CSS layout solution,</span><br />
             <span class="text-4xl tracking-wider text-blue-400">for your entire app</span>
@@ -142,7 +142,7 @@
               Go back
             </button>
           </crow>
-          <crow class="gap-4" vertical left y>
+          <crow class="gap-4" vertical left>
             <span class="font-medium"> {'Other settings'} </span>
             <label class="crow gap-2">
               <input
