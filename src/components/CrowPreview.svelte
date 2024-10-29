@@ -16,8 +16,8 @@
     if (filteredProps.length) {
       string = `${filteredProps.map(([key]) => key).join(' ')}`;
     }
-    if (string && !!classBased) {
-      string = `class="crow ${string}"`;
+    if (!!classBased) {
+      string = `class="crow${string ? ` ${string}` : ''}"`;
     }
     return string ? ` ${string}` : '';
   };

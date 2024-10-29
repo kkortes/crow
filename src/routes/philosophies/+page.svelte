@@ -58,7 +58,7 @@
     Notice the extra <strong>8px</strong> margin at the bottom. This is a very common issue and
     almost every website have a few of these.<br />
     In some cases, for example when listing elements horizontally, you can get away with it - because
-    it's not noticable:
+    it's not noticeable:
   </p>
   <crow class="gap-4">
     <div class="overflow-hidden rounded-md text-xs">
