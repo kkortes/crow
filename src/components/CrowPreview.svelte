@@ -35,7 +35,7 @@
   <crow class="w-full rounded-t-lg bg-gray-200 p-4">
     <crow
       class={twMerge(
-        'bg-white [&>*>*]:border [&>*>*]:border-fuchsia-700 [&>*>*]:bg-fuchsia-400 [&>*>*]:px-4 [&>*>*]:py-2 [&>*]:w-full [&>*]:text-xl [&>*]:text-white',
+        'flex-1 bg-white [&>*>*]:border [&>*>*]:border-fuchsia-700 [&>*>*]:bg-fuchsia-400 [&>*>*]:px-4 [&>*>*]:py-2 [&>*]:w-full [&>*]:text-xl [&>*]:text-white',
         !!squareWrapper && 'aspect-square'
       )}
     >

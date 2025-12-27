@@ -1,4 +1,4 @@
-<crow class="!w-auto !flex-none gap-2">
+<crow class="!w-auto gap-2">
   <div class="w-12 overflow-hidden rounded-full">
     <img src="/kkortes.jpg" alt="" />
   </div>

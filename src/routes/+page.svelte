@@ -203,7 +203,7 @@
     </div>
   </crow>
 
-  <crow class="flex-none gap-8">
+  <crow class="!flex-none gap-8">
     <Accordion isOpen={showDebugger}>
       <div>
         <CrowPreview {...crowProps} {squareWrapper} {classBased} />

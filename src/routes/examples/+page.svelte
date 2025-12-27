@@ -52,7 +52,7 @@
           class="mb-3 mt-2 h-px w-full border-none bg-gradient-to-r from-gray-200 to-transparent"
         />
         <crow class="w-full rounded-t-lg bg-gray-200 p-4">
-          <crow class="bg-white [&>*]:w-full [&>*]:p-8">
+          <crow class="w-full bg-white [&>*]:w-full [&>*]:p-8">
             <AsyncExample component={code || preview} />
           </crow>
         </crow>
@@ -75,7 +75,7 @@
           class="mb-3 mt-2 h-px w-full border-none bg-gradient-to-r from-gray-200 to-transparent"
         />
         <crow class="w-full rounded-t-lg bg-gray-200 p-4">
-          <crow class="bg-white [&>*]:w-full [&>*]:p-8">
+          <crow class="w-full bg-white [&>*]:w-full [&>*]:p-8">
             <AsyncExample component={code || preview} />
           </crow>
         </crow>

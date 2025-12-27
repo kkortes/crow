@@ -1,15 +1,15 @@
 <crow>
-  <button class="crow !flex-none">
+  <button class="crow">
     <svg />
   </button>
-  <crow>
-    <button class="crow !flex-none"> 1 </button>
-    <button class="crow !flex-none"> 2 </button>
-    <button class="crow !flex-none"> ... </button>
-    <button class="crow !flex-none"> 11 </button>
-    <button class="crow !flex-none"> 12 </button>
+  <crow class="flex-1">
+    <button class="crow"> 1 </button>
+    <button class="crow"> 2 </button>
+    <button class="crow"> ... </button>
+    <button class="crow"> 11 </button>
+    <button class="crow"> 12 </button>
   </crow>
-  <button class="crow !flex-none">
+  <button class="crow">
     <svg />
   </button>
 </crow>

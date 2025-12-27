@@ -13,7 +13,7 @@
     <div class="flex-1">First item</div>
     <div class="w-1/5">62</div>
     <div class="w-1/5">24-11-2023</div>
-    <crow class="w-1/5 !flex-none" right>
+    <crow class="w-1/5" right>
       <button> Download </button>
     </crow>
   </crow>
