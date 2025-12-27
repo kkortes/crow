@@ -74,17 +74,10 @@
             </p>
 
             <crow class="gap-2">
-              <a
-                href="https://crow.korte.kim/crow.css"
-                target="_blank"
-                class="rounded-md border border-transparent bg-blue-600 px-5 py-3 font-thin leading-normal tracking-wider text-white outline-0 ring-2 ring-transparent transition-all duration-75 hover:bg-blue-600/90 focus:ring-blue-400/50"
-              >
+              <a class="button h-10" href="https://crow.korte.kim/crow.css" target="_blank" primary>
                 Download CSS
               </a>
-              <button
-                onclick={() => (showTutorial = true)}
-                class="rounded-md border border-blue-600 bg-transparent px-5 py-3 font-thin leading-normal tracking-wider text-blue-600 outline-0 ring-2 ring-transparent transition-all duration-75 hover:bg-blue-600/10 focus:ring-blue-400/50"
-              >
+              <button class="h-10" onclick={() => (showTutorial = true)} secondary>
                 Interactive tutorial
               </button>
             </crow>
@@ -98,62 +91,34 @@
               <span class="font-medium"> {'Settings <crow>'} </span>
 
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={crowProps.up}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={crowProps.up} type="checkbox" />
                 Up
               </label>
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={crowProps.right}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={crowProps.right} type="checkbox" />
                 Right
               </label>
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={crowProps.down}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={crowProps.down} type="checkbox" />
                 Down
               </label>
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={crowProps.left}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={crowProps.left} type="checkbox" />
                 Left
               </label>
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={crowProps.vertical}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={crowProps.vertical} type="checkbox" />
                 Vertical
               </label>
             </crow>
             <crow class="gap-4" vertical left>
               <span class="font-medium"> {'Other settings'} </span>
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={squareWrapper}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={squareWrapper} type="checkbox" />
                 Square wrapper
               </label>
               <label class="crow gap-2 font-thin">
-                <input
-                  bind:checked={classBased}
-                  type="checkbox"
-                  class="h-6 w-11 appearance-none rounded-full border-2 border-gray-400 bg-gray-400 outline-0 ring-2 ring-transparent transition-all duration-75 before:block before:aspect-square before:h-full before:rounded-full before:bg-white before:transition-all before:duration-75 before:content-[''] checked:border-blue-400 checked:bg-blue-400 checked:before:ml-5 focus:ring-blue-400/50"
-                />
+                <input bind:checked={classBased} type="checkbox" />
                 Class based
               </label>
             </crow>

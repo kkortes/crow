@@ -4,8 +4,9 @@
 @import 'https://row.column.center/row-column-center.css';
 @import 'https://row.column.center/row-col-cen.css';
 @import 'https://row.column.center/r-c-c.css';
-@import '../static/crow-element.css';
-@import '../static/crow.css';
+/* @import '../static/crow-element.css';
+@import '../static/crow.css'; */
+@import '../static/stylecheat.css';
 
 body {
   overflow-y: scroll;
